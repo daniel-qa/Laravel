@@ -1,0 +1,9 @@
+docker run --name php-lara -p 880:80 -d  php:7.4.24-fpm
+
+
+docker run --name php-lara -p 880:80 -d  php-lara:v1
+
+
+docker build -t php-lara:v1 .
+
+docker build -t php-lara-nginx:v1 -f Dockerfile_install_nginx

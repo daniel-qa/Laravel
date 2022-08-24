@@ -1,0 +1,10 @@
+# FROM php-lara:v1
+
+# 安裝 Nginx 
+RUN apt install nginx -y
+RUN nginx
+
+WORKDIR /var/www
+
+
+EXPOSE 80 443
